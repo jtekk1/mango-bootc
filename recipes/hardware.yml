@@ -1,0 +1,19 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+type: dnf
+install:
+  packages:
+    # Universal GPU userspace
+    - mesa-dri-drivers
+    - mesa-vulkan-drivers
+    - vulkan-loader
+
+    # AMD
+    - amd-gpu-firmware
+    - amd-ucode-firmware
+    - lact
+
+    # Intel (iGPU + video acceleration)
+    - intel-media-driver
+    - libva-intel-driver
+    - mesa-va-drivers

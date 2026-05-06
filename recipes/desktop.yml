@@ -1,0 +1,52 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  - type: dnf
+    install:
+      packages:
+        - awww
+        - blueman
+        - chromium
+        - cliphist
+        - flatpak
+        - foot
+        - greetd
+        - grim
+        - imv
+        - kanshi
+        - kitty
+        - libnotify
+        - mako
+        - mangowm
+        - mpv
+        - pipewire
+        - playerctl
+        - shotman
+        - slurp
+        - starship
+        - stow
+        - swaybg
+        - sway-audio-idle-inhibit
+        - swayidle
+        - swaylock-effects
+        - SwayOSD
+        - tuigreet
+        - wayland-utils
+        - wl-clip-persist
+        - wl-clipboard
+        - wlogout
+        - wlopm
+        - wlr-randr
+        - wlsunset
+        - waybar
+        - wofi
+        - xdg-desktop-portal-wlr
+        - xdg-desktop-portal
+        - xinput
+        - xorg-x11-server-Xwayland
+        - xrdb
+
+  - type: systemd
+    system:
+      enabled:
+        - greetd.service

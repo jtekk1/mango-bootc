@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  # CLI utilities
+  - type: dnf
+    install:
+      packages:
+        - atuin
+        - bat
+        - bitwarden-cli
+        - eza
+        - fd
+        - fzf
+        - jq
+        - lsof
+        - plocate
+        - ripgrep
+        - rsync
+        - wget
+        - yazi
+        - zip
+        - zoxide
+
+  # TUI apps
+  - type: dnf
+    install:
+      packages:
+        - bluetui
+        - btop
+        - dialog
+        - dust
+        - fastfetch
+        - gdu
+        - glow
+        - impala
+        - lazygit
+        - luarocks
+        - ncdu
+        - neovim
+        - tldr
+        - wiremix
+
+  # GUI apps (Discord/OBS/Kdenlive/HandBrake live in flatpaks.yml)
+  - type: dnf
+    install:
+      packages:
+        - satty
+        - swappy
+
+  # Fonts
+  - type: dnf
+    install:
+      packages:
+        - cascadiacode-nerd-fonts
+        - cascadiamono-nerd-fonts
+        - jetbrainsmono-nerd-fonts
+        - google-noto-sans-fonts
+        - google-noto-serif-fonts
+        - google-noto-sans-cjk-fonts
+        - google-noto-color-emoji-fonts
+        - google-noto-emoji-fonts
+        - fontawesome-fonts-all
+
+  # Misc system utilities
+  - type: dnf
+    install:
+      packages:
+        - udiskie
+        - wev
+        - xcursorgen
+
+  # Fun stuff
+  - type: dnf
+    install:
+      packages:
+        - asciiquarium
+        - cmatrix
