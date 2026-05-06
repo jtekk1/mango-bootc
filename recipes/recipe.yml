@@ -10,33 +10,9 @@ modules:
   - type: files
     files:
       - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-
-  - type: dnf
-    repos:
-      files:
-        add:
-          - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-          - https://forgejo.jtekk.dev/api/packages/TekkRPM/rpm/tekk-fedora-%OS_VERSION%.repo
-          - terra.repo
-      copr:
-        - atim/starship
-        - ilyaz/LACT
-      nonfree: rpmfusion
-    install:
-      packages:
-        - micro
-        - starship
-
-  - type: default-flatpaks
-    configurations:
-      - notify: true 
-        scope: system
-        install:
-          - com.bitwarden.desktop 
-          - io.github.kolunmi.Bazaar
-          - org.mozilla.firefox
-          - org.gnome.Loupe
-      - scope: user
+        destination: /
+  - from-file: repos.yml
+  - from-file: core.yml
+  - from-file: plymouth.yml
 
   - type: signing
