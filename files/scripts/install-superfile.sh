@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-[[ -x /usr/local/bin/spf ]] && exit 0
+[[ -x /usr/bin/spf ]] && exit 0
 
 case "$(uname -m)" in
   x86_64) arch=amd64 ;;
@@ -23,4 +23,4 @@ tar -xzf "$tmp/spf.tar.gz" -C "$tmp"
 binary=$(find "$tmp" -name spf -type f -executable | head -1)
 [[ -n "$binary" ]] || { echo "spf binary not found in tarball" >&2; exit 1; }
 
-install -m 755 "$binary" /usr/local/bin/spf
+install -m 755 "$binary" /usr/bin/spf
