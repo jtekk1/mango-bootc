@@ -1,16 +1,11 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-# image will be published to ghcr.io/<user>/<name>
 name: mango-bootc
-# description will be included in the image's metadata
-description: This is my personal OS image.
+description: This is my personal OS image of Mango and Fedora using bootc.
 
-# the base image to build on top of (FROM) and the version tag to use
 base-image: quay.io/fedora/fedora-bootc
-image-version: 44 # latest is also supported if you want new updates ASAP
+image-version: latest
 
-# module configuration, executed in order
-# you can include multiple instances of the same module
 modules:
   - type: files
     files:
@@ -19,18 +14,19 @@ modules:
 
   - type: dnf
     repos:
+      files:
+        add:
+          - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+          - https://forgejo.jtekk.dev/api/packages/TekkRPM/rpm/tekk-fedora-%OS_VERSION%.repo
+          - terra.repo
       copr:
         - atim/starship
+        - ilyaz/LACT
+      nonfree: rpmfusion
     install:
       packages:
         - micro
         - starship
-    remove:
-      packages:
-        # example: removing firefox (in favor of the flatpak)
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     configurations:
