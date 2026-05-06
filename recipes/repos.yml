@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+type: dnf
+repos:
+  files:
+    add:
+      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      - https://forgejo.jtekk.dev/api/packages/TekkRPM/rpm/tekk-fedora-%OS_VERSION%.repo
+      - terra.repo
+  copr:
+    enable:
+      - atim/starship
+      - ilyaz/LACT
+  nonfree: rpmfusion
+  keys:
+    - https://repos.fyralabs.com/terra%OS_VERSION%/key.asc
