@@ -7,20 +7,4 @@ base-image: quay.io/fedora/fedora-bootc
 image-version: latest
 
 modules:
-  - type: files
-    files:
-      - source: system
-        destination: /
-  - from-file: repos.yml
-  - from-file: core.yml
-  - from-file: hardware.yml
-  - from-file: plymouth.yml
-  - from-file: system-packages.yml
-  - from-file: desktop.yml
-  - from-file: gaming.yml
-  - from-file: dev-dependencies.yml
-  - from-file: extras.yml
-  - from-file: brew.yml
-  - from-file: flatpaks.yml
-
-  - type: signing
+  - from-file: all-packages.yml
