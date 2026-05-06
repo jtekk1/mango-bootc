@@ -3,7 +3,7 @@
 name: mango-blue-build
 description: This is my personal OS image of Mango and Fedora, built on the BlueBuild base.
 
-base-image: ghcr.io/blue-build/fedora-base
+base-image: ghcr.io/blue-build/base-images/fedora-base
 image-version: latest
 
 modules:
