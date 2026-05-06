@@ -1,0 +1,10 @@
+type: dnf
+install:
+  packages:
+    - curl
+    - git
+    - gh
+    - linux-firmware
+    - pciutils
+    - tailscale
+    - xdg-user-dirs
