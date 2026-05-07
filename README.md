@@ -2,6 +2,8 @@
 
 ## Installation
 
+NOTE: At the moment there's no support for NVIDIA yet.  This should be coming in soon.
+
 To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
