@@ -4,6 +4,7 @@ modules:
     install:
       packages:
         - curl
+        - dbus
         - git
         - gh
         - pciutils
