@@ -3,4 +3,5 @@
 type: dnf
 install:
   packages:
+    - direnv
     - make

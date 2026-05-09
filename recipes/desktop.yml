@@ -12,7 +12,9 @@ modules:
         - foot
         - greetd
         - grim
+        - helium-browser
         - imv
+        - iwd
         - kanshi
         - kitty
         - libnotify
@@ -30,6 +32,7 @@ modules:
         - swayidle
         - swaylock-effects
         - SwayOSD
+        - tekktonic
         - tuigreet
         - wayland-utils
         - wl-clip-persist
@@ -50,3 +53,4 @@ modules:
     system:
       enabled:
         - greetd.service
+        - iwd.service
