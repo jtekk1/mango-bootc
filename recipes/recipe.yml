@@ -3,7 +3,7 @@
 name: mango-bootc
 description: This is my personal OS image of Mango and Fedora, built on the BlueBuild base.
 
-base-image: quay.io/repository/fedora/fedora-bootc
+base-image: quay.io/repository/fedora/fedora-bootc-standard
 image-version: 44
 
 modules:
