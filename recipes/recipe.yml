@@ -4,7 +4,10 @@ name: mango-bootc
 description: This is my personal OS image of Mango and Fedora, built on the BlueBuild base.
 
 base-image: quay.io/fedora-ostree-desktops/base-atomic
-image-version: latest
+image-version: 44
 
 modules:
   - from-file: all-packages.yml
+  - type: os-release
+    properties:
+      PRETTY_NAME: Mango-Bootc (FROM Fedora base-atomic)
