@@ -1,6 +1,6 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: mango-bootc
+name: nelhua-linux
 description: This is my personal OS image of Mango and Fedora, built on the BlueBuild base.
 
 base-image: ghcr.io/blue-build/base-images/fedora-base
@@ -10,4 +10,4 @@ modules:
   - from-file: all-packages.yml
   - type: os-release
     properties:
-      PRETTY_NAME: Mango-Bootc (FROM Fedora base-atomic)
+      PRETTY_NAME: Nelhua-Linux (FROM Fedora base-atomic)
