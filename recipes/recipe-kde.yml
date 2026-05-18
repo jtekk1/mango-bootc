@@ -3,7 +3,8 @@
 name: nelhua-kde
 description: This is my personal OS image of Fedora Kinoite, built on the BlueBuild base.
 
-base-image: ghcr.io/blue-build/base-images/fedora-kinoite
+# base-image: ghcr.io/blue-build/base-images/fedora-kinoite
+base-image: quay.io/fedora/fedora-bootc:rawhide
 image-version: latest
 
 modules:

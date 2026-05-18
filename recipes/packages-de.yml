@@ -1,12 +1,17 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
 modules:
+  - type: dnf
+    install:
+      packages:
+        - kde-desktop
   - type: files
     files:
       - source: system
         destination: /
   - from-file: packages/repos.yml
   - from-file: packages/core.yml
+  - from-file: packages/desktop.yml
   - from-file: packages/hardware.yml
   - from-file: packages/plymouth.yml
   - from-file: packages/system-packages.yml
