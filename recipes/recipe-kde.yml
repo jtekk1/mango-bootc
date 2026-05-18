@@ -1,13 +1,13 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: nelhua-mango
-description: This is my personal OS image of Mango and Fedora, built on the BlueBuild base.
+name: nelhua-kde
+description: This is my personal OS image of Fedora Kinoite, built on the BlueBuild base.
 
 base-image: ghcr.io/blue-build/base-images/fedora-kinoite
 image-version: latest
 
 modules:
-  - from-file: all-packages.yml
+  - from-file: packages-de.yml
   - type: os-release
     properties:
-      PRETTY_NAME: Nelhua-Linux
+      PRETTY_NAME: Nelhua-Linux (KDE)

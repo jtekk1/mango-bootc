@@ -10,4 +10,4 @@ modules:
   - from-file: all-packages.yml
   - type: os-release
     properties:
-      PRETTY_NAME: Nelhua-Linux (FROM Fedora base-atomic)
+      PRETTY_NAME: Nelhua-Linux (Mango Edition)

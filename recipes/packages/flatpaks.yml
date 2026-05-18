@@ -17,4 +17,3 @@ modules:
           - net.lutris.Lutris
           - com.valvesoftware.Steam.CompatibilityTool.Proton-GE
           - org.freedesktop.Platform.VulkanLayer.MangoHud
-      - scope: user

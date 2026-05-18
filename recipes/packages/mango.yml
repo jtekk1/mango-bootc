@@ -6,33 +6,23 @@ modules:
       packages:
         - awww
         - blueman
-        - chromium
         - cliphist
-        - flatpak
-        - foot
         - greetd
         - grim
-        - helium-browser
-        - imv
         - iwd
         - kanshi
-        - kitty
         - libnotify
         - mako
         - mangowm
-        - mpv
         - pipewire
         - playerctl
         - shotman
         - slurp
-        - starship
-        - stow
         - swaybg
         - sway-audio-idle-inhibit
         - swayidle
         - swaylock-effects
         - SwayOSD
-        - tekktonic
         - tuigreet
         - wayland-utils
         - wl-clip-persist
@@ -47,7 +37,6 @@ modules:
         - xdg-desktop-portal
         - xinput
         - xorg-x11-server-Xwayland
-        - xrdb
 
   - type: systemd
     system:
