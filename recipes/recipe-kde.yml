@@ -3,11 +3,11 @@
 name: nelhua-mango
 description: This is my personal OS image of Mango and Fedora, built on the BlueBuild base.
 
-base-image: ghcr.io/blue-build/base-images/fedora-base
+base-image: ghcr.io/blue-build/base-images/fedora-kinoite-latest
 image-version: latest
 
 modules:
   - from-file: all-packages.yml
   - type: os-release
     properties:
-      PRETTY_NAME: Nelhua-Linux (FROM Fedora base-atomic)
+      PRETTY_NAME: Nelhua-Linux
