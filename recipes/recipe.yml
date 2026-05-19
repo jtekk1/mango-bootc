@@ -5,7 +5,7 @@ description: This is my personal OS image of Mango and Fedora, built on the Blue
 
 # base-image: ghcr.io/blue-build/base-images/fedora-base
 base-image: quay.io/fedora/fedora-bootc
-image-version: rawhide
+image-version: 44
 
 modules:
   - from-file: all-packages.yml

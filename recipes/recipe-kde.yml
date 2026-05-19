@@ -5,7 +5,7 @@ description: This is my personal OS image of Fedora Kinoite, built on the BlueBu
 
 # base-image: ghcr.io/blue-build/base-images/fedora-kinoite
 base-image: quay.io/fedora/fedora-bootc
-image-version: rawhide
+image-version: 44
 
 modules:
   - from-file: packages-de.yml
