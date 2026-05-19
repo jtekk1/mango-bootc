@@ -11,7 +11,6 @@ modules:
         - grim
         - iwd
         - kanshi
-        - libnotify
         - mako
         - mangowm
         - pipewire
@@ -19,7 +18,6 @@ modules:
         - shotman
         - slurp
         - swaybg
-        - sway-audio-idle-inhibit
         - swayidle
         - swaylock-effects
         - SwayOSD
@@ -27,11 +25,11 @@ modules:
         - wayland-utils
         - wl-clip-persist
         - wl-clipboard
-        - wlogout
         - wlopm
         - wlr-randr
         - wlsunset
         - waybar
+        - wayland-pipewire-idle-inhibit
         - wofi
         - xdg-desktop-portal-wlr
         - xdg-desktop-portal

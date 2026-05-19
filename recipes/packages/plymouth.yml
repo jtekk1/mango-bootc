@@ -4,14 +4,7 @@ modules:
     install:
       packages:
         - plymouth
-        - plymouth-theme-breeze
-        - plymouth-theme-charge
-        - plymouth-theme-fade-in
-        - plymouth-theme-hot-dog
-        - plymouth-theme-script
         - plymouth-theme-solar
-        - plymouth-theme-spinfinity
-        - plymouth-theme-spinner
 
   - type: script
     scripts:

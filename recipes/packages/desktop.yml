@@ -6,7 +6,6 @@ modules:
       packages:
         - chromium
         - flatpak
-        - foot
         - helium-browser
         - imv
         - kitty
