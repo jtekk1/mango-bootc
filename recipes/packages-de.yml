@@ -4,7 +4,7 @@ modules:
   - type: dnf
     install:
       packages:
-        - kde-desktop
+        - "@kde-desktop"
   - type: files
     files:
       - source: system
