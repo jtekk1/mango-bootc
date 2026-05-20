@@ -3,8 +3,8 @@
 name: nelhua-mango
 description: This is my personal OS image of Mango and Fedora, built on the BlueBuild base.
 
-# base-image: ghcr.io/blue-build/base-images/fedora-base
-base-image: quay.io/fedora/fedora-bootc
+base-image: ghcr.io/blue-build/base-images/fedora-base
+# base-image: quay.io/fedora/fedora-bootc
 image-version: 44
 
 modules:
