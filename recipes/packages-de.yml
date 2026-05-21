@@ -15,6 +15,5 @@ modules:
   - from-file: packages/dev-dependencies.yml
   - from-file: packages/extras.yml
   - from-file: packages/brew.yml
-  - from-file: packages/flatpaks.yml
 
   - type: signing
